@@ -12,9 +12,8 @@ fetch("https://rickandmortyapi.com/api/character")
       image.alt = character.name;
       image.classList.add('character-image');
       
-      // Add an event listener to the image
       image.addEventListener('click', () => {
-        // This is where you would handle the click event and display the information.
+        
         alert(`Name: ${character.name}\nStatus: ${character.status}\nSpecies: ${character.species}\nLocation: ${character.location.name}`);
       });
 
